@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		957FCBD82F2D506200A9D566 /* ReminderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FCBD72F2D506200A9D566 /* ReminderRowView.swift */; };
+		957FCBDA2F2D511400A9D566 /* RecurrenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FCBD92F2D511400A9D566 /* RecurrenceType.swift */; };
+		957FCBDC2F2D516A00A9D566 /* Reminder+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FCBDB2F2D516A00A9D566 /* Reminder+Logic.swift */; };
+		957FCBDE2F2D51EE00A9D566 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FCBDD2F2D51EE00A9D566 /* AddReminderView.swift */; };
+		9592B07E2F2E8DE8004C78CE /* ReminderCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B07D2F2E8DE8004C78CE /* ReminderCategory.swift */; };
+		9592B0802F2E9185004C78CE /* RecurrencePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B07F2F2E9185004C78CE /* RecurrencePickerView.swift */; };
+		9592B0822F2E93D4004C78CE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B0812F2E93D4004C78CE /* NotificationManager.swift */; };
 		95F1AED12F2BDC9600693E78 /* RemindlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AED02F2BDC9600693E78 /* RemindlyApp.swift */; };
 		95F1AED32F2BDC9600693E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AED22F2BDC9600693E78 /* ContentView.swift */; };
 		95F1AED52F2BDC9E00693E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F1AED42F2BDC9E00693E78 /* Assets.xcassets */; };
-		95F1AED82F2BDC9E00693E78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F1AED72F2BDC9E00693E78 /* Preview Assets.xcassets */; };
 		95F1AEDA2F2BDC9E00693E78 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AED92F2BDC9E00693E78 /* Persistence.swift */; };
 		95F1AEDD2F2BDC9E00693E78 /* Remindly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AEDB2F2BDC9E00693E78 /* Remindly.xcdatamodeld */; };
 		95F1AEE72F2BDC9F00693E78 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AEE62F2BDC9F00693E78 /* RemindlyTests.swift */; };
 		95F1AEF12F2BDC9F00693E78 /* RemindlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AEF02F2BDC9F00693E78 /* RemindlyUITests.swift */; };
 		95F1AEF32F2BDC9F00693E78 /* RemindlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AEF22F2BDC9F00693E78 /* RemindlyUITestsLaunchTests.swift */; };
+		95F1AF012F2BFE5300693E78 /* Reminder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AEFF2F2BFE5300693E78 /* Reminder+CoreDataClass.swift */; };
+		95F1AF022F2BFE5300693E78 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AF002F2BFE5300693E78 /* Reminder+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		957FCBD72F2D506200A9D566 /* ReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRowView.swift; sourceTree = "<group>"; };
+		957FCBD92F2D511400A9D566 /* RecurrenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurrenceType.swift; sourceTree = "<group>"; };
+		957FCBDB2F2D516A00A9D566 /* Reminder+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+Logic.swift"; sourceTree = "<group>"; };
+		957FCBDD2F2D51EE00A9D566 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
+		9592B07D2F2E8DE8004C78CE /* ReminderCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCategory.swift; sourceTree = "<group>"; };
+		9592B07F2F2E9185004C78CE /* RecurrencePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurrencePickerView.swift; sourceTree = "<group>"; };
+		9592B0812F2E93D4004C78CE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		95F1AECD2F2BDC9600693E78 /* Remindly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remindly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F1AED02F2BDC9600693E78 /* RemindlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyApp.swift; sourceTree = "<group>"; };
 		95F1AED22F2BDC9600693E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95F1AED42F2BDC9E00693E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		95F1AED72F2BDC9E00693E78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95F1AED92F2BDC9E00693E78 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		95F1AEDC2F2BDC9E00693E78 /* Remindly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Remindly.xcdatamodel; sourceTree = "<group>"; };
 		95F1AEE22F2BDC9F00693E78 /* RemindlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +62,8 @@
 		95F1AEEC2F2BDC9F00693E78 /* RemindlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F1AEF02F2BDC9F00693E78 /* RemindlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITests.swift; sourceTree = "<group>"; };
 		95F1AEF22F2BDC9F00693E78 /* RemindlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95F1AEFF2F2BFE5300693E78 /* Reminder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		95F1AF002F2BFE5300693E78 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +94,12 @@
 		95F1AEC42F2BDC9600693E78 = {
 			isa = PBXGroup;
 			children = (
-				95F1AECF2F2BDC9600693E78 /* Remindly */,
+				95F1AED42F2BDC9E00693E78 /* Assets.xcassets */,
+				95F1AED02F2BDC9600693E78 /* RemindlyApp.swift */,
+				95F1AF082F2C025300693E78 /* Persistence */,
+				95F1AF072F2C01DB00693E78 /* Notifications */,
+				95F1AF052F2C013200693E78 /* Views */,
+				95F1AECF2F2BDC9600693E78 /* Models */,
 				95F1AEE52F2BDC9F00693E78 /* RemindlyTests */,
 				95F1AEEF2F2BDC9F00693E78 /* RemindlyUITests */,
 				95F1AECE2F2BDC9600693E78 /* Products */,
@@ -95,25 +116,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95F1AECF2F2BDC9600693E78 /* Remindly */ = {
+		95F1AECF2F2BDC9600693E78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				95F1AED02F2BDC9600693E78 /* RemindlyApp.swift */,
-				95F1AED22F2BDC9600693E78 /* ContentView.swift */,
-				95F1AED42F2BDC9E00693E78 /* Assets.xcassets */,
-				95F1AED92F2BDC9E00693E78 /* Persistence.swift */,
+				95F1AEFF2F2BFE5300693E78 /* Reminder+CoreDataClass.swift */,
+				95F1AF002F2BFE5300693E78 /* Reminder+CoreDataProperties.swift */,
 				95F1AEDB2F2BDC9E00693E78 /* Remindly.xcdatamodeld */,
-				95F1AED62F2BDC9E00693E78 /* Preview Content */,
+				957FCBD92F2D511400A9D566 /* RecurrenceType.swift */,
+				957FCBDB2F2D516A00A9D566 /* Reminder+Logic.swift */,
+				9592B07D2F2E8DE8004C78CE /* ReminderCategory.swift */,
+				9592B0812F2E93D4004C78CE /* NotificationManager.swift */,
 			);
-			path = Remindly;
-			sourceTree = "<group>";
-		};
-		95F1AED62F2BDC9E00693E78 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				95F1AED72F2BDC9E00693E78 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		95F1AEE52F2BDC9F00693E78 /* RemindlyTests */ = {
@@ -131,6 +145,32 @@
 				95F1AEF22F2BDC9F00693E78 /* RemindlyUITestsLaunchTests.swift */,
 			);
 			path = RemindlyUITests;
+			sourceTree = "<group>";
+		};
+		95F1AF052F2C013200693E78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95F1AED22F2BDC9600693E78 /* ContentView.swift */,
+				957FCBD72F2D506200A9D566 /* ReminderRowView.swift */,
+				957FCBDD2F2D51EE00A9D566 /* AddReminderView.swift */,
+				9592B07F2F2E9185004C78CE /* RecurrencePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95F1AF072F2C01DB00693E78 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		95F1AF082F2C025300693E78 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				95F1AED92F2BDC9E00693E78 /* Persistence.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F1AED82F2BDC9E00693E78 /* Preview Assets.xcassets in Resources */,
 				95F1AED52F2BDC9E00693E78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +303,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F1AEDA2F2BDC9E00693E78 /* Persistence.swift in Sources */,
+				957FCBD82F2D506200A9D566 /* ReminderRowView.swift in Sources */,
+				95F1AF012F2BFE5300693E78 /* Reminder+CoreDataClass.swift in Sources */,
 				95F1AEDD2F2BDC9E00693E78 /* Remindly.xcdatamodeld in Sources */,
+				9592B0802F2E9185004C78CE /* RecurrencePickerView.swift in Sources */,
 				95F1AED32F2BDC9600693E78 /* ContentView.swift in Sources */,
+				9592B0822F2E93D4004C78CE /* NotificationManager.swift in Sources */,
+				957FCBDC2F2D516A00A9D566 /* Reminder+Logic.swift in Sources */,
 				95F1AED12F2BDC9600693E78 /* RemindlyApp.swift in Sources */,
+				95F1AF022F2BFE5300693E78 /* Reminder+CoreDataProperties.swift in Sources */,
+				957FCBDE2F2D51EE00A9D566 /* AddReminderView.swift in Sources */,
+				9592B07E2F2E8DE8004C78CE /* ReminderCategory.swift in Sources */,
+				957FCBDA2F2D511400A9D566 /* RecurrenceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +472,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Remindly/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,9 +501,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Remindly/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
