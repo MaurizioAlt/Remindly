@@ -16,18 +16,39 @@ struct RecurrencePickerView: View {
 
     var body: some View {
         Section("Repeat") {
+
             Picker("Frequency", selection: $type) {
-                ForEach(RecurrenceType.allCases, id: \.self) {
-                    Text($0.rawValue.capitalized)
-                }
+                Text("Never").tag(RecurrenceType.none)
+                Text("Daily").tag(RecurrenceType.daily)
+                Text("Weekly").tag(RecurrenceType.weekly)
+                Text("Monthly").tag(RecurrenceType.monthly)
             }
 
             if type != .none {
-                Stepper("Every \(interval)", value: $interval, in: 1...30)
+                HStack {
+                    Text("Every")
+
+                    Stepper(
+                        value: $interval,
+                        in: 1...30
+                    ) {
+                        Text(interval == 1
+                             ? type.unitSingular
+                             : type.unitPlural)
+                    }
+                }
             }
 
             if type == .monthly {
-                Stepper("Day \(monthDay)", value: $monthDay, in: 1...31)
+                HStack {
+                    Text("On the")
+                    Picker("Day", selection: $monthDay) {
+                        ForEach(1...31, id: \.self) {
+                            Text($0.ordinal)
+                        }
+                    }
+                    Text("day")
+                }
             }
         }
     }

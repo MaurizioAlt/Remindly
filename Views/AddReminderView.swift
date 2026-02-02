@@ -18,7 +18,7 @@ struct AddReminderView: View {
     @State private var category: ReminderCategory = .house
     @State private var recurrenceType: RecurrenceType = .none
     @State private var recurrenceInterval = 1
-    @State private var recurrenceMonthDay = 1
+    @State private var recurrenceMonthDay = Calendar.current.component(.day, from: Date())
 
 
     var body: some View {
@@ -37,6 +37,13 @@ struct AddReminderView: View {
                 interval: $recurrenceInterval,
                 monthDay: $recurrenceMonthDay
             )
+            
+            if recurrenceType != .none {
+                Text(recurrenceSummary)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.leading)
+            }
 
             Button("Save") {
                 saveReminder()
@@ -62,4 +69,25 @@ struct AddReminderView: View {
         try? viewContext.save()
         dismiss()
     }
+    
+    private var recurrenceSummary: String {
+        switch recurrenceType {
+        case .daily:
+            return "Repeats every \(recurrenceInterval) " +
+                   (recurrenceInterval == 1 ? "day" : "days")
+
+        case .weekly:
+            return "Repeats every \(recurrenceInterval) " +
+                   (recurrenceInterval == 1 ? "week" : "weeks")
+
+        case .monthly:
+            return "Repeats every \(recurrenceInterval) " +
+                   (recurrenceInterval == 1 ? "month" : "months") +
+                   " on the \(recurrenceMonthDay.ordinal)"
+
+        case .none:
+            return ""
+        }
+    }
+
 }
